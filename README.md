@@ -1,24 +1,35 @@
-# README
+# User API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+User API is a Ruby on Rails api to create users.
+* Ruby 2.5.1
+* Rails 6.0.3.2
 
-Things you may want to cover:
+## Dependences
 
-* Ruby version
+* [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/)
 
-* System dependencies
+## Installation
 
-* Configuration
+On aplication console:
 
-* Database creation
+```bash
+docker-compose build
+```
+```bash
+docker-compose run --rm web bash
+```
+```bash
+rails db:create db:migrate
+```
+```bash
+docker-compose up
+```
 
-* Database initialization
+## Usage and Documentation
+* [Documentation](https://explore.postman.com/fabioml10)
 
-* How to run the test suite
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+Unlicensed.
